@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Docker script') {
      steps{
-       sh('docker image')
+       sh('/var/jenkins_home/workspace/myDocker/script.sh')
 	 }
 	}
    }
