@@ -3,9 +3,9 @@ pipeline {
     dockerfile true
   }
   stages {
-    stage('Example') {
+    stage('Docker script') {
      steps{
-       echo 'Hello world'
+       sh 'docker images'
 	 }
 	}
    }
