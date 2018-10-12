@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Docker script') {
      steps{
-       sh "docker ps -a"
+	sh 'pwd; ls -alt'   
 	 }
 	}
    }
