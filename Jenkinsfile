@@ -5,7 +5,8 @@ pipeline {
   stages {
     stage('Docker script') {
      steps{
-       echo 'Hello World' 
+       #echo 'Hello World'
+       sh "docker ps -a"
 	 }
 	}
    }
